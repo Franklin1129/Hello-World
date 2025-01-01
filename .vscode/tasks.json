@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc 生成活动文件",
+            "command": "/usr/bin/gcc",
+            "args": [
+            
+                "-fdiagnostics-color=always",
+                "-Wall",
+                "-g",
+                "${workspaceFolder}/main.c",
+                "${workspaceFolder}/my_btree.c",
+                "${workspaceFolder}/my_queue.c",
+                "${workspaceFolder}/my_stack.c",
+                "-o",
+                "${workspaceFolder}/program"
+            ],
+            "options": {
+                //"cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"  // Set the working directory my_btree.c
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
