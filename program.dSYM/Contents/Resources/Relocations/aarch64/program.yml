@@ -1,0 +1,19 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/mingyi/Desktop/Coding/Hello-World/program'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003394, symSize: 0x15C }
+  - { offset: 0x4D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003394, symSize: 0x15C }
+  - { offset: 0x149, size: 0x8, addend: 0x0, symName: _AllocateTreeNode, symObjAddr: 0x0, symBinAddr: 0x1000034F0, symSize: 0x7C }
+  - { offset: 0x1A3, size: 0x8, addend: 0x0, symName: _AllocateTreeNode, symObjAddr: 0x0, symBinAddr: 0x1000034F0, symSize: 0x7C }
+  - { offset: 0x1CB, size: 0x8, addend: 0x0, symName: _GenerateBinaryTreebyArray, symObjAddr: 0x7C, symBinAddr: 0x10000356C, symSize: 0x234 }
+  - { offset: 0x263, size: 0x8, addend: 0x0, symName: _inorderTraversal, symObjAddr: 0x2B0, symBinAddr: 0x1000037A0, symSize: 0x140 }
+  - { offset: 0x2D1, size: 0x8, addend: 0x0, symName: _PreorderTraversal, symObjAddr: 0x3F0, symBinAddr: 0x1000038E0, symSize: 0x140 }
+  - { offset: 0x33F, size: 0x8, addend: 0x0, symName: _PostorderTraversal, symObjAddr: 0x530, symBinAddr: 0x100003A20, symSize: 0x1F8 }
+  - { offset: 0x42D, size: 0x8, addend: 0x0, symName: _EnQueue, symObjAddr: 0x0, symBinAddr: 0x100003C18, symSize: 0x90 }
+  - { offset: 0x461, size: 0x8, addend: 0x0, symName: _EnQueue, symObjAddr: 0x0, symBinAddr: 0x100003C18, symSize: 0x90 }
+  - { offset: 0x4AF, size: 0x8, addend: 0x0, symName: _DeQueue, symObjAddr: 0x90, symBinAddr: 0x100003CA8, symSize: 0xD8 }
+  - { offset: 0x52C, size: 0x8, addend: 0x0, symName: _Stack_Push, symObjAddr: 0x0, symBinAddr: 0x100003D80, symSize: 0xA4 }
+  - { offset: 0x560, size: 0x8, addend: 0x0, symName: _Stack_Push, symObjAddr: 0x0, symBinAddr: 0x100003D80, symSize: 0xA4 }
+  - { offset: 0x5A0, size: 0x8, addend: 0x0, symName: _Stack_Pop, symObjAddr: 0xA4, symBinAddr: 0x100003E24, symSize: 0x90 }
+...

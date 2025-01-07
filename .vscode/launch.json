@@ -1,22 +1,17 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-
         {
-            "name": "Run Program",
+            "name": "Debug C Program",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/program",  // Adjust the path to your executable
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/output_file", // Match output from tasks.json
+            "args": [],                // Command-line arguments for your program
+            "stopAtEntry": false,      // Set true to break at the entry point
+            "cwd": "${workspaceFolder}", // Set working directory
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
+            "MIMode": "lldb",          // Use LLDB on macOS
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -24,8 +19,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc 生成活动文件" //后面的字符串和task.json的label要匹配
+            "preLaunchTask": "C/C++: gcc build"
         }
-
     ]
 }
