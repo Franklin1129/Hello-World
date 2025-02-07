@@ -7,11 +7,14 @@
  *  ppTail: always point to the tail of queue
  *  pVal: thge value to be enter the tail of queue
  */
+
+
 void EnQueue(struct Queue **ppHead,struct Queue **ppTail, void *pVal){
     struct Queue *pTemp;
     
     pTemp = (struct Queue *)malloc(sizeof(struct Queue));
     pTemp->pVal = pVal;
+    pTemp->pNext = NULL;
     
     
     if(*ppHead == NULL){//first elemnet    
